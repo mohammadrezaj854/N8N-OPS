@@ -37,7 +37,7 @@ Ubuntu 22.04 / 24.04. Recommended: 2 vCPU and at least 4 GB RAM for the base sta
 ## Install manager
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_GITHUB_USER/N8N-OPS/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/mohammadrezaj854/N8N-OPS/main/install.sh | sudo bash
 ```
 
 Then:
