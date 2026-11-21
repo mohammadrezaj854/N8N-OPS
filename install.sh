@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-REPO="${N8N_OPS_REPO:-YOUR_GITHUB_USER/N8N-OPS}"
+REPO="${N8N_OPS_REPO:-mohammadrezaj854/N8N-OPS}"
 BRANCH="${N8N_OPS_BRANCH:-main}"
 INSTALL_DIR="/opt/n8n-ops"
 TMP_DIR="$(mktemp -d)"
