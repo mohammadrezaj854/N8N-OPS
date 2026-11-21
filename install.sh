@@ -32,7 +32,11 @@ SRC="$(find "$TMP_DIR" -mindepth 1 -maxdepth 1 -type d | head -n1)"
 
 mkdir -p "$INSTALL_DIR"
 cp -a "$SRC/." "$INSTALL_DIR/"
-chmod 750 "$INSTALL_DIR/n8n-ops" "$INSTALL_DIR/scripts/"*.sh
+chmod 750 "$INSTALL_DIR/n8n-ops"
+
+if [[ -d "$INSTALL_DIR/scripts" ]]; then
+    find "$INSTALL_DIR/scripts" -maxdepth 1 -type f -name '*.sh' -exec chmod 750 {} +
+fi
 ln -sfn "$INSTALL_DIR/n8n-ops" /usr/local/bin/n8n-ops
 
 echo "[+] Installed to $INSTALL_DIR"
