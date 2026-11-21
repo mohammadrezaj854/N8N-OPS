@@ -1,0 +1,10 @@
+.env
+*.env
+.env.*
+backups/
+logs/
+*.log
+*.pem
+*.key
+*.crt
+secrets/
